@@ -1,6 +1,6 @@
 [package]
 name = "asm_att"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "Macros that makes the assembly writing of ATT syntax a bit more convenient."
 license = "MIT"

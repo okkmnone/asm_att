@@ -1,3 +1,4 @@
+#![deny(missing_docs)]
 #![no_std]
 
 //!
@@ -6,7 +7,7 @@
 //! ## Examples
 //!
 //! ```rust
-//! use asm_att::asm_att;
+//! use asm_att::{asm_att, global_asm_att, naked_asm_att};
 //!
 //! #[cfg(target_arch = "x86_64")]
 //! {
@@ -135,6 +136,7 @@
 //! }
 //! ```
 
+/// See [`core::arch::asm`] for more.
 #[macro_export]
 macro_rules! asm_att {
     ( $($arg:tt)+ ) => {
@@ -142,6 +144,7 @@ macro_rules! asm_att {
     };
 }
 
+/// See [`core::arch::global_asm`] for more.
 #[macro_export]
 macro_rules! global_asm_att {
     ( $($arg:tt)+ ) => {
@@ -149,6 +152,7 @@ macro_rules! global_asm_att {
     };
 }
 
+/// See [`core::arch::naked_asm`] for more.
 #[macro_export]
 macro_rules! naked_asm_att {
     ( $($arg:tt)+ ) => {
