@@ -1,0 +1,11 @@
+[package]
+name = "asm_att"
+version = "0.1.0"
+edition = "2024"
+description = "Macros that makes the assembly writing of ATT syntax a bit more convenient."
+license = "MIT"
+keywords = ["asm", "assembly", "att"]
+repository = "https://github.com/okkmnone/asm_att"
+readme = "README.md"
+
+[dependencies]
